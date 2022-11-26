@@ -11,19 +11,19 @@
 
     <div class="p-5 w-full bg-slate-500">
         <nav class="flex justify-between text-white">
-            <ul class="flex justify-around w-2/12">
-                <li><a href="{{ url('')}}">Home</a></li>
-                <li><a href="{{ url('')}}">Aggiungi Auto</a></li>
+            <ul class="flex ">
+                <li><a href="{{ url('')}}" class="p-3">Home</a></li>
+                <li><a href="{{ url('')}}" class="p-3">Aggiungi Auto</a></li>
             </ul>
-            <ul class="flex justify-around w-2/12">
-                <li><a href="{{ url('profile')}}" target="_self">Profile</a></li>
-                <li><a href="{{ url('')}}" target="_self">Login</a></li>
-                <li><a href="{{ url('')}}" target="_self">Logout</a></li>
+            <ul class="flex ">
+                <li><a href="{{ url('profile')}}" target="_self" class="p-3">Profile</a></li>
+                <li><a href="{{ url('login')}}" target="_self" class="p-3">Login</a></li>
+                <li><a href="{{ url('logout')}}" target="_self" class="p-3">Logout</a></li>
             </ul>
         </nav>
     </div>
 
-    <div class="w-8/12 pt-6 flex justify-center">
+    <div class="pt-6 w-100 flex justify-center">
         @yield('content')
     </div>
 </body>

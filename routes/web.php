@@ -18,3 +18,14 @@ Route::get('/', [ HomeController::class, 'homeView' ]);
 Route::get('/profile', function(){
     return view('user.profile');
 });
+
+Route::get('/login', function(){
+    return view('user.login');
+});
+
+Route::get('/logout', function(){
+    return view('user.logout');
+});
+
+
+
