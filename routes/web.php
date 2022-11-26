@@ -15,3 +15,6 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', [ HomeController::class, 'homeView' ]);
+Route::get('/profile', function(){
+    return view('user.profile');
+});
