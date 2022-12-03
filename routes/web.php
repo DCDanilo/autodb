@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,10 +15,17 @@ use App\Http\Controllers\HomeController;
 |
 */
 
+
 Route::get('/', [ HomeController::class, 'homeView' ]);
+
+// User Routes
 Route::get('/profile', function(){
     return view('user.profile');
 });
+
+Route::get('/register', [UserController::class, 'register'])->name('register');
+Route::post('/register', [UserController::class, 'store']);
+
 
 Route::get('/login', function(){
     return view('user.login');

@@ -17,13 +17,14 @@
             </ul>
             <ul class="flex ">
                 <li><a href="{{ url('profile')}}" target="_self" class="p-3">Profile</a></li>
+                <li><a href="{{ url('register')}}" target="_self" class="p-3">Register</a></li>
                 <li><a href="{{ url('login')}}" target="_self" class="p-3">Login</a></li>
                 <li><a href="{{ url('logout')}}" target="_self" class="p-3">Logout</a></li>
             </ul>
         </nav>
     </div>
 
-    <div class="pt-6 w-100 flex justify-center">
+    <div class="pt-6 w-full flex justify-center">
         @yield('content')
     </div>
 </body>
